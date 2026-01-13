@@ -10,7 +10,19 @@ def hollow_right_triangle(n):
 
 # Q3: Inverted Pyramid
 def inverted_pyramid(n):
-    return ""
+    result = ""
+
+    for i in range(n):
+
+        for j in range(i):
+            result += " "
+
+        for k in range(2 * (n - i - 1) - 1):
+            result += "*"
+
+        result += "\n"
+
+    return result.rstrip()
 
 # ----------------------------------------------------------------
 print(area_of_circle(5))
