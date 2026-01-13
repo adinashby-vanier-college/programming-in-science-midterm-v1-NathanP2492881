@@ -3,7 +3,7 @@ import math
 # Q1: Calculate the area of a circle
 def area_of_circle(radius):
     
-    area_of_circle =2 * math.pi * (radius**2)
+    area_of_circle = math.pi * (radius**2)
 
     return (round(area_of_circle, 2))
 
