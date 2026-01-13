@@ -28,6 +28,9 @@ def hollow_right_triangle(n):
 # Q3: Inverted Pyramid
 def inverted_pyramid(n):
     result = ""
+    if n < 3:
+        return "The pyramid height should be at least 3."
+        
 
     for i in range(n):
 
